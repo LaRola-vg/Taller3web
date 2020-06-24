@@ -46,6 +46,9 @@
 		<form action="" method="">
 			<select>
 				<option value="seleccion">-selecciona-</option>
+				<option value="san">Santander</option>
+				<option value="cund">Cundinamarca</option>
+				<option value="nor">Norte de Santander</option>
 			</select>
 		</form>
 	<br> 
@@ -71,10 +74,14 @@
 			<input type="number" id="Year" min="1950" max="2020" name="">
 		</form>
 	<br>
-	Temas de interés <br>
-	<iframe frameborder="1" width="300" height="100"
-	src="temas.html" name="ouriframe" id="ouriframe">
-	</iframe>
+	<label class="block" for="topics">Temas de interés</label> <br>
+            <select name="topics" id="topics" multiple>
+                <option value="db">Administración de bases de datos</option>
+                <option value="programacion">Análisis y programación</option>
+                <option value="arquitectura">Arquitectura</option>
+                <option value="calidad">Calidad</option>
+                <option value="business">ERP, CRM, Business Intelligence</option>
+            </select>
 	</fieldset>
 		<a href="vista2ListaMenu.html"><input type="submit" value="Guardar cambios"></a>
 		<input type="reset" value="Borrar los datos introducidos">
